@@ -1,376 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- ====== Favicon ====== -->
-  <link
-    rel="shortcut icon"
-    href="images/download (1).jpeg"
-    type="image/png"
-  />
-  <!-- ====== Boxicons ====== -->
-  <link
-    href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
-    rel="stylesheet"
-  />
-  <!-- ====== Custom CSS ====== -->
-  <link rel="stylesheet" href="css/styles.css" />
-  <title>KB Clothes - Contact</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-  
-    /* Navigation Styles */
-    
-    .navbar {
-      background-color: transparent;
-      box-shadow: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 999;
-    }
-    
-  
-    .navbar .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-    }
-  
-    .navbar .logo img {
-      max-height: 40px;
-    }
-  
-    .navbar .nav-list {
-      display: flex;
-      align-items: center;
-    }
-  
-    .navbar .nav-list a {
-      color: #333;
-      font-size: 16px;
-      text-decoration: none;
-      margin-right: 20px;
-      transition: color 0.3s ease;
-    }
-  
-    .navbar .nav-list a:hover {
-      color: #ff0066;
-    }
-  
-    .navbar .icons {
-      display: flex;
-      align-items: center;
-    }
-  
-    .navbar .icons .icon {
-      font-size: 24px;
-      margin-right: 20px;
-      color: #333;
-      cursor: pointer;
-      transition: color 0.3s ease;
-    }
-  
-    .navbar .icons .icon:hover {
-      color: #ff0066;
-    }
-  
-    .navbar .hamburger {
-      display: none;
-      font-size: 28px;
-      color: #333;
-      cursor: pointer;
-    }
-  
-    @media (max-width: 768px) {
-      .navbar .nav-list {
-        display: none;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        padding: 10px;
-        flex-direction: column;
-        align-items: center;
-      }
-  
-      .navbar .nav-list a {
-        margin-right: 0;
-        margin-bottom: 10px;
-      }
-  
-      .navbar .icons {
-        display: none;
-      }
-  
-      .navbar .hamburger {
-        display: block;
-      }
-      
-    }
-  </style>
-  
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ====== Favicon ====== -->
+    <link rel="shortcut icon" href="images/download (1).jpeg" type="image/png" />
+    <!-- ====== Boxicons ====== -->
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+    <!-- ====== Custom CSS ====== -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>KB Clothes - Contact</title>
+    <style>
+        /* Styles for the Contact Form Section */
+        .section.contact {
+            padding: 50px 0;
+            background-color: #f7f7f7;
+        }
+
+        .form-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .form-control {
+            margin-bottom: 20px;
+        }
+
+        .form-control label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .form-control input,
+        .form-control textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-control textarea {
+            resize: vertical;
+        }
+
+        .form-control input[type="submit"] {
+            background-color: #ff0066;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-control input[type="submit"]:hover {
+            background-color: #cc0052;
+        }
+
+        /* Styles for the Placeholder Box */
+        .placeholder-box {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .placeholder-box h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .placeholder-box p {
+            color: #777;
+        }
+
+        /* Additional Styles */
+        /* Add any additional CSS styles you need for your specific website */
+    </style>
+
 </head>
+
 <body>
-  <!-- ====== Header ====== -->
-  <!-- Copy the header section from the original HTML file -->
-  <nav class="navbar">
-    <div class="row container d-flex">
-      <div class="logo">
-        <img src="./images/logo.svg" alt="" />
-      </div>
-  
-      <div class="nav-list d-flex">
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="">Pages</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="">Lookups</a>
-      </div>
-  
-      <div class="icons d-flex">
-        <div class="icon d-flex"><i class="bx bx-search"></i></div>
-        <div class="icon user-icon d-flex">
-          <i class="bx bx-user"></i>
-        </div>
-        <div class="icon d-flex">
-          <i class="bx bx-bell"></i>
-          <span></span>
-        </div>
-      </div>
-  
-      <!-- Hamburger -->
-      <div class="hamburger">
-        <i class="bx bx-menu-alt-right"></i>
-      </div>
-    </div>
-  </nav>
-
-  <!-- ====== Contact Form ====== -->
-  <section class="section contact">
-    <div class="title">
-      <span>CONTACT</span>
-      <h2>Get in Touch</h2>
-    </div>
-
-    <div class="container">
-      <div class="form-wrapper">
-        <form action="#" method="POST" class="contact-form">
-          <div class="form-control">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-control">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-control">
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required />
-          </div>
-          <div class="form-control">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
-          </div>
-          <div class="form-control">
-            <input type="submit" value="Submit" class="btn" />
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== Footer ====== -->
-  <!-- Copy the footer section from the original HTML file -->
-  <footer class="footer">
-    <div class="row container">
-      <div class="col">
-        <div class="logo d-flex">
-          <img src="./images/logo.svg" alt="logo" />
-        </div>
-        <p>
-          Lorem ispum is a placeholder text <br />
-          commonly used as a free text.
-        </p>
-        <div class="icons d-flex">
-          <div class="icon d-flex">
-            <i class="bx bxl-facebook"></i>
-          </div>
-          <div class="icon d-flex"><i class="bx bxl-twitter"></i></div>
-          <div class="icon d-flex"><i class="bx bxl-instagram"></i></div>
-          <div class="icon d-flex"><i class="bx bxl-youtube"></i></div>
-        </div>
-        <p class="color">
-          Copyrights 2023 <br />
-          Krish Bikram Shah
-        </p>
-      </div>
-      <div class="col">
-        <div>
-          <h4>Product</h4>
-          <a href="">Download</a>
-          <a href="">Pricing</a>
-          <a href="">Locations</a>
-          <a href="">Server</a>
-          <a href="">Countries</a>
-          <a href="">Blog</a>
-        </div>
-        <div>
-          <h4>Category</h4>
-          <a href="">Men</a>
-          <a href="">Women</a>
-          <a href="">Kids</a>
-          <a href="">Best Seller</a>
-          <a href="">New Arrivals</a>
-        </div>
-        <div>
-          <h4>My Account</h4>
-          <a href="">My Account</a>
-          <a href="">Discount</a>
-          <a href="">Returns</a>
-          <a href="">Order History</a>
-          <a href="">Order Tracking</a>
-        </div>
-        <div>
-          <h4>Contact Us</h4>
-          <div class="d-flex">
-            <div class="icon"><i class="bx bxs-map"></i></div>
-            <span>Balkumari DIGI-Nepal, Kathmandu, Nepal</span>
-          </div>
-          <div class="d-flex">
-            <div class="icon"><i class="bx bxs-envelope"></i></div>
-            <span>krishsah221@gmail.com</span>
-          </div>
-          <div class="d-flex">
-            <div class="icon"><i class="bx bxs-phone"></i></div>
-            <span>+977 9814302175</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ====== Login and Signup Form ====== -->
-  <!-- Copy the login and signup form from the original HTML file -->
-  <div class="user-form">
-    <div class="close-form d-flex"><i class="bx bx-x"></i></div>
-    <div class="form-wrapper container">
-      <div class="user login">
-        <div class="img-box">
-          <img src="./images/login.svg" alt="" />
-        </div>
-        <div class="form-box">
-          <div class="top">
-            <p>
-              Not a member?
-              <span data-id="#ff0066">Register now</span>
-            </p>
-          </div>
-          <form action="">
-            <div class="form-control">
-              <h2>Hello Again!</h2>
-              <p>Welcome back you've been missed.</p>
-              <input type="text" placeholder="Enter Username" />
-              <div>
-                <input type="password" placeholder="Password" />
-                <div class="icon form-icon">
-                  <!-- <img src="./images/eye.svg" alt="" /> -->
+    <!-- ====== Header ====== -->
+    <header class="header">
+        <!-- ====== Navigation ====== -->
+        <nav class="navbar">
+            <div class="row container d-flex">
+                <div class="logo">
+                    <img src="./images/logo.svg" alt="" />
                 </div>
-              </div>
-              <span>Recovery Password</span>
-              <input type="Submit" value="Login" />
+
+                <div class="nav-list d-flex">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="">Pages</a>
+                    <a href="contact.html">contact us</a>
+                    <a href="loookup.html">Lookups</a>
+                    <div class="close">
+                        <i class="bx bx-x"></i>
+                    </div>
+                    <a class="user-link">Login</a>
+                </div>
+
+                <div class="icons d-flex">
+                    <div class="icon d-flex"><i class="bx bx-search"></i>
+                        <div class="search-bar">
+                            <input type="text" class="search-input" placeholder="Search here..." />
+                            <button class="search-btn"><i class="bx bx-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="icon user-icon d-flex">
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="icon d-flex">
+                        <i class="bx bx-bell"></i>
+                        <span></span>
+                    </div>
+                </div>
+
+
+                <!-- Hamburger -->
+                <div class="hamburger">
+                    <i class="bx bx-menu-alt-right"></i>
+                </div>
             </div>
-            <div class="form-control">
-              <p>Or continue with</p>
-              <div class="icons">
-                <div class="icon">
-                  <img src="./images/search.svg" alt="" />
-                </div>
-                <div class="icon">
-                  <img src="./images/apple.svg" alt="" />
-                </div>
-                <div class="icon">
-                  <img src="./images/facebook.svg" alt="" />
-                </div>
-                <div class="icon">
-                  <img src="./images/github.svg" alt="" />
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
+        </nav>
 
-      <!-- Register -->
-      <div class="user signup">
-        <div class="form-box">
-          <div class="top">
-            <p>
-              Already a member?
-              <span data-id="#1a1aff">Login now</span>
-            </p>
-          </div>
-          <form action="">
-            <div class="form-control">
-              <h2>Welcome Codevo!</h2>
-              <p>It's good to have you.</p>
-              <input type="email" placeholder="Enter Email" />
-              <div>
-                <input type="password" placeholder="Password" />
-                <div class="icon form-icon">
-                  <img src="./images/eye.svg" alt="" />
+        <!-- ====== Hero Area ====== -->
+        <div class="hero">
+            <div class="row container d-flex">
+                <div class="col">
+                    <span class="subtitle">Limited Time Only For Summer</span>
+                    <h1>fash<span class="i">i</span>on</h1>
+                    <p>LOOK YOUR BEST ON YOUR BEST DAY</p>
+
+                    <button class="btn">Explore Now!</button>
                 </div>
-              </div>
-              <div>
-                <input type="password" placeholder="Confirm Password" />
-                <div class="icon form-icon">
-                  <img src="./images/eye.svg" alt="" />
-                </div>
-              </div>
-              <input type="Submit" value="Register" />
+                <img src="./images/woman-in-cart.png" alt="" />
             </div>
-            <div class="form-control">
-              <p>Or continue with</p>
-              <div class="icons">
-                <div class="icon">
-                  <img src="./images/search.svg" alt="" />
-                </div>
-                <div class="icon">
-                  <img src="./images/apple.svg" alt="" />
-                </div>
-                <div class="icon">
-                  <img src="./images/facebook.svg" alt="" />
-                </div>
-                <div class="icon">
-                  <img src="./images/github.svg" alt="" />
-                </div>
-              </div>
+        </div>
+    </header>
+
+    <!-- ====== Contact Form ====== -->
+    <section class="section contact">
+        <div class="title">
+            <span>CONTACT</span>
+            <h2>Get in Touch</h2>
+        </div>
+
+        <div class="container">
+            <div class="form-wrapper">
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-control">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <div class="form-control">
+                        <input type="submit" value="Submit" class="btn" />
+                    </div>
+                </form>
             </div>
-          </form>
         </div>
-        <div class="img-box">
-          <img src="./images/trial.svg" alt="" />
+    </section>
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe width="100%" height="100%" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=DiGi Nepal pvt. ltd., M8FM+49F, Lalitpur 44600&t=&z=10&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+
+            </iframe><a href="https://2yu.co">2yu</a>
+            <br>
+            <style>
+                .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 100%;
+                    width: 100%;
+                }
+            </style>
+            <a href="https://embedgooglemap.2yu.co/">html embed google map</a>
+            <style>
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 100%;
+                    width: 100%;
+                }
+            </style>
         </div>
-      </div>
     </div>
-  </div>
 
 
-  <!-- ====== SwiperJs ====== -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- ====== Footer ====== -->
+    <!-- Copy the footer section from the original HTML file -->
+    <footer class="footer">
+        <div class="row container">
+            <div class="col">
+                <div class="logo d-flex">
+                    <img src="./images/logo.svg" alt="logo" />
+                </div>
+                <p>
+                    Lorem ispum is a placeholder text <br />
+                    commonly used as a free text.
+                </p>
+                <div class="icons d-flex">
+                    <div class="icon d-flex">
+                        <i class="bx bxl-facebook"></i>
+                    </div>
+                    <div class="icon d-flex"><i class="bx bxl-twitter"></i></div>
+                    <div class="icon d-flex"><i class="bx bxl-instagram"></i></div>
+                    <div class="icon d-flex"><i class="bx bxl-youtube"></i></div>
+                </div>
+                <p class="color">
+                    Copyrights 2023 <br />
+                    Krish Bikram Shah
+                </p>
+            </div>
+            <div class="col">
+                <div>
+                    <h4>Product</h4>
+                    <a href="">Download</a>
+                    <a href="">Pricing</a>
+                    <a href="">Locations</a>
+                    <a href="">Server</a>
+                    <a href="">Countries</a>
+                    <a href="">Blog</a>
+                </div>
+                <div>
+                    <h4>Category</h4>
+                    <a href="">Men</a>
+                    <a href="">Women</a>
+                    <a href="">Kids</a>
+                    <a href="">Best Seller</a>
+                    <a href="">New Arrivals</a>
+                </div>
+                <div>
+                    <h4>My Account</h4>
+                    <a href="">My Account</a>
+                    <a href="">Discount</a>
+                    <a href="">Returns</a>
+                    <a href="">Order History</a>
+                    <a href="">Order Tracking</a>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <div class="d-flex">
+                        <div class="icon"><i class="bx bxs-map"></i></div>
+                        <span>Balkumari DIGI-Nepal, Kathmandu, Nepal</span>
+                    </div>
+                    <div class="d-flex">
+                        <div class="icon"><i class="bx bxs-envelope"></i></div>
+                        <span>krishsah221@gmail.com</span>
+                    </div>
+                    <div class="d-flex">
+                        <div class="icon"><i class="bx bxs-phone"></i></div>
+                        <span>+977 9814302175</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-  <!-- ====== Custom Script ====== -->
-  <script src="./js/product.js"></script>
-  <script src="./js/main.js"></script>
+    <!-- ====== Login and Signup Form ====== -->
+    <!-- Copy the login and signup form from the original HTML file -->
+    <div class="user-form">
+        <div class="close-form d-flex"><i class="bx bx-x"></i></div>
+        <div class="form-wrapper container">
+            <div class="user login">
+                <div class="img-box">
+                    <img src="./images/login.svg" alt="" />
+                </div>
+                <div class="form-box">
+                    <div class="top">
+                        <p>
+                            Not a member?
+                            <span data-id="#ff0066">Register now</span>
+                        </p>
+                    </div>
+                    <form action="">
+                        <div class="form-control">
+                            <h2>Hello Again!</h2>
+                            <p>Welcome back you've been missed.</p>
+                            <input type="text" placeholder="Enter Username" />
+                            <div>
+                                <input type="password" placeholder="Password" />
+                                <div class="icon form-icon">
+                                    <!-- <img src="./images/eye.svg" alt="" /> -->
+                                </div>
+                            </div>
+                            <span>Recovery Password</span>
+                            <input type="Submit" value="Login" />
+                        </div>
+                        <div class="form-control">
+                            <p>Or continue with</p>
+                            <div class="icons">
+                                <div class="icon">
+                                    <img src="./images/search.svg" alt="" />
+                                </div>
+                                <div class="icon">
+                                    <img src="./images/apple.svg" alt="" />
+                                </div>
+                                <div class="icon">
+                                    <img src="./images/facebook.svg" alt="" />
+                                </div>
+                                <div class="icon">
+                                    <img src="./images/github.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Register -->
+            <div class="user signup">
+                <div class="form-box">
+                    <div class="top">
+                        <p>
+                            Already a member?
+                            <span data-id="#1a1aff">Login now</span>
+                        </p>
+                    </div>
+                    <form action="">
+                        <div class="form-control">
+                            <h2>Welcome Codevo!</h2>
+                            <p>It's good to have you.</p>
+                            <input type="email" placeholder="Enter Email" />
+                            <div>
+                                <input type="password" placeholder="Password" />
+                                <div class="icon form-icon">
+                                    <img src="./images/eye.svg" alt="" />
+                                </div>
+                            </div>
+                            <div>
+                                <input type="password" placeholder="Confirm Password" />
+                                <div class="icon form-icon">
+                                    <img src="./images/eye.svg" alt="" />
+                                </div>
+                            </div>
+                            <input type="Submit" value="Register" />
+                        </div>
+                        <div class="form-control">
+                            <p>Or continue with</p>
+                            <div class="icons">
+                                <div class="icon">
+                                    <img src="./images/search.svg" alt="" />
+                                </div>
+                                <div class="icon">
+                                    <img src="./images/apple.svg" alt="" />
+                                </div>
+                                <div class="icon">
+                                    <img src="./images/facebook.svg" alt="" />
+                                </div>
+                                <div class="icon">
+                                    <img src="./images/github.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="img-box">
+                    <img src="./images/trial.svg" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ====== SwiperJs ====== -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    å
+    <!-- ====== Custom Script ====== -->
+    <script src="./js/product.js"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
