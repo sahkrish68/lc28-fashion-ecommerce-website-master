@@ -15,8 +15,148 @@
   <link rel="stylesheet" href="css/styles.css" />
   <title>KB Clothes - Lookups</title>
   <style>
-    /* Your existing CSS styles */
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body style */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f7f7f7;
+    }
+
+    /* Header style (customize as needed) */
     /* ... */
+
+    /* Lookup Section style */
+    .lookup {
+      padding: 50px 0;
+      background-color: #fff;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .title span {
+      color: #ff0066;
+      font-size: 24px;
+    }
+
+    .title h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    /* Lookup Form style */
+    .lookup-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+    }
+
+    select,
+    input[type="range"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #f7f7f7;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .form-group .form-icon {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 6px;
+      margin-left: 10px;
+      width: 32px;
+      height: 32px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      background-color: #ff0066;
+      color: #fff;
+      padding: 12px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #cc0055;
+    }
+
+    /* Lookup Results style */
+    .lookup-results {
+      margin-top: 40px;
+    }
+
+    .lookup-results h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #ff0066;
+    }
+
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .product-card h4 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .product-card div {
+      color: #ff0066;
+      font-size: 18px;
+      font-weight: bold;
+    }
   </style>
 </head>
 
@@ -362,6 +502,16 @@
   // Add event listener to the search button
   const searchButton = document.querySelector(".btn");
   searchButton.addEventListener("click", handleSearch);
+  // Add event listener to the price range input to update the displayed price value
+  const priceRangeInput = document.getElementById("price-range");
+  priceRangeInput.addEventListener("input", (event) => {
+    const selectedPrice = event.target.value;
+    updatePriceValue(selectedPrice);
+  });
+
+  // Initialize the displayed price value on page load
+  const initialPrice = priceRangeInput.value;
+  updatePriceValue(initialPrice);
 </script>
 </body>
 

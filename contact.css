@@ -535,7 +535,7 @@ img {
   }
 }
 
-  *{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -824,6 +824,7 @@ form button {
     gap: 3rem 0;
   }
 }
+
 /* Add this CSS to your existing styles */
 
 .form-control {
