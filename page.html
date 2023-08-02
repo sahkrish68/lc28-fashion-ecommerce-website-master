@@ -2,339 +2,111 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Add your meta tags, CSS links, and other head elements here -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ====== Favicon ====== -->
+  <link rel="shortcut icon" href="images/download (1).jpeg" type="image/png" />
+  <!-- ====== Boxicons ====== -->
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+  <!-- ====== Swiper CSS ====== -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- ====== Custom CSS ====== -->
+  <link rel="stylesheet" href="css/styles.css" />
+  
+  <title>KB Clothes</title>
 
-    <title>KB Clothes - Page</title>
-    <link rel="stylesheet" href="css/styles.css" />
+
 </head>
-<style>
-    /* Additional CSS styles for the About Us section */
-.about-us {
-  padding: 80px 0;
-}
 
-.about-us .title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.about-us .title span {
-  display: block;
-  font-size: 18px;
-  color: #ff0066;
-}
-
-.about-us .title h2 {
-  font-size: 36px;
-  margin-top: 10px;
-}
-
-.about-us .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.about-us .col {
-  flex: 1;
-  max-width: 400px;
-  margin: 20px;
-}
-
-.about-us img {
-  max-width: 100%;
-  border-radius: 8px;
-}
-
-.about-us h3 {
-  font-size: 24px;
-  margin-top: 20px;
-}
-
-.about-us p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-}
-
-</style>
 <body>
-    <!-- Add your page content here -->
-    <!-- For example, you can have a header with a different background color -->
-    <header class="header page-header">
-        <!-- Your header content specific to this page -->
-        <!-- ... -->
-        <header class="header">
-            <!-- ====== Navigation ====== -->
-            <nav class="navbar">
-                <div class="row container d-flex">
-                    <div class="logo">
-                        <img src="./images/logo.svg" alt="" />
-                    </div>
-
-                    <div class="nav-list d-flex">
-                        <a href="index.html">Home</a>
-                        <a href="shop.html">Shop</a>
-                        <a href="page.html">Pages</a>
-                        <a href="contact.html">contact us</a>
-                        <a href="loookup.html">Lookups</a>
-                        <div class="close">
-                            <i class="bx bx-x"></i>
-                        </div>
-                        <a class="user-link">Login</a>
-                    </div>
-
-                    <div class="icons d-flex">
-                        <div class="icon d-flex"><i class="bx bx-search"></i>
-                            <div class="search-bar">
-                                <input type="text" class="search-input" placeholder="Search here..." />
-                                <button class="search-btn"><i class="bx bx-search"></i></button>
-                            </div>
-                        </div>
-                        <div class="icon user-icon d-flex">
-                            <i class="bx bx-user"></i>
-                        </div>
-                        <div class="icon d-flex">
-                            <i class="bx bx-bell"></i>
-                            <span></span>
-                        </div>
-                    </div>
-
-
-                    <!-- Hamburger -->
-                    <div class="hamburger">
-                        <i class="bx bx-menu-alt-right"></i>
-                    </div>
-                </div>
-            </nav>
-
-            <!-- ====== Hero Area ====== -->
-            <div class="hero">
-                <div class="row container d-flex">
-                    <div class="col">
-                        <span class="subtitle">Limited Time Only For Summer</span>
-                        <h1>fash<span class="i">i</span>on</h1>
-                        <p>LOOK YOUR BEST ON YOUR BEST DAY</p>
-
-                        <button class="btn">Explore Now!</button>
-                    </div>
-                    <img src="./images/woman-in-cart.png" alt="" />
-                </div>
-            </div>
-        </header>
-    </header>
-
-    <!-- Add other sections and content specific to this page -->
-    <section class="section about-us">
-        <div class="title">
-          <span>ABOUT US</span>
-          <h2>Who We Are</h2>
+  <body class="loaded"></body>
+  <!-- ====== Header ====== -->
+  <header class="header">
+    <!-- ====== Navigation ====== -->
+    <nav class="navbar">
+      <div class="row container d-flex">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="" />
         </div>
-      
-        <div class="row container">
-          <div class="col">
-            <img src="images/test.jpg" alt="About Us" />
+
+        <div class="nav-list d-flex">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="page.html">Pages</a>
+          <a href="contact.html">contact us</a>
+          <a href="loookup.html">Lookups</a>
+          <div class="close">
+            <i class="bx bx-x"></i>
           </div>
-          <div class="col">
-            <h3>Welcome to KB Clothes!</h3>
-            <p>
-              KB Clothes is a premier online fashion store, providing the latest and trendiest clothing and accessories for
-              both men and women. We believe that fashion should be accessible to everyone, and that's why we bring you a
-              curated collection of the finest garments and accessories from top brands around the world.
-            </p>
-            <p>
-              Our mission is to make you look and feel your best on every occasion. Whether you are preparing for a special
-              event, upgrading your daily wardrobe, or looking for the perfect gift, KB Clothes has got you covered.
-            </p>
-            <p>
-              We are committed to providing excellent customer service and a seamless shopping experience. Our team is
-              dedicated to assisting you in finding the perfect outfit that suits your style and personality.
-            </p>
+          <a class="user-link">Login</a>
+        </div>
+
+        <div class="icons d-flex">
+          <div class="icon d-flex"><i class="bx bx-search"></i>
+            <div class="search-bar">
+              <input type="text" class="search-input" placeholder="Search here..." />
+              <button class="search-btn"><i class="bx bx-search"></i></button>
+            </div>
+          </div>
+          <div class="icon user-icon d-flex">
+            <i class="bx bx-user"></i>
+          </div>
+          <div class="icon d-flex">
+            <i class="bx bx-bell"></i>
+            <span></span>
           </div>
         </div>
-      </section>
-      
 
-    <!-- You can include the same footer used on the homepage -->
-    <footer class="footer">
-        <!-- Your footer content specific to this page -->
-        <!-- ... -->
-        <footer class="footer">
-            <div class="row container">
-                <div class="col">
-                    <div class="logo d-flex">
-                        <img src="./images/logo.svg" alt="logo" />
-                    </div>
-                    <p>
-                        Lorem ispum is a placeholder text <br />
-                        commonly used as a free text.
-                    </p>
-                    <div class="icons d-flex">
-                        <div class="icon d-flex">
-                            <i class="bx bxl-facebook"></i>
-                        </div>
-                        <div class="icon d-flex"><i class="bx bxl-twitter"></i></div>
-                        <div class="icon d-flex"><i class="bx bxl-instagram"></i></div>
-                        <div class="icon d-flex"><i class="bx bxl-youtube"></i></div>
-                    </div>
-                    <p class="color">
-                        Copyrights 2023 <br />
-                        Krish Bikram Shah
-                    </p>
-                </div>
-                <div class="col">
-                    <div>
-                        <h4>Product</h4>
-                        <a href="">Download</a>
-                        <a href="">Pricing</a>
-                        <a href="">Locations</a>
-                        <a href="">Server</a>
-                        <a href="">Countries</a>
-                        <a href="">Blog</a>
-                    </div>
-                    <div>
-                        <h4>Category</h4>
-                        <a href="">Men</a>
-                        <a href="">Women</a>
-                        <a href="">Kids</a>
-                        <a href="">Best Seller</a>
-                        <a href="">New Arrivals</a>
-                    </div>
-                    <div>
-                        <h4>My Account</h4>
-                        <a href="">My Account</a>
-                        <a href="">Discount</a>
-                        <a href="">Returns</a>
-                        <a href="">Order History</a>
-                        <a href="">Order Tracking</a>
-                    </div>
-                    <div>
-                        <h4>Contact Us</h4>
-                        <div class="d-flex">
-                            <div class="icon"><i class="bx bxs-map"></i></div>
-                            <span>Balkumari DIGI-Nepal, Kathmandu, Nepal</span>
-                        </div>
-                        <div class="d-flex">
-                            <div class="icon"><i class="bx bxs-envelope"></i></div>
-                            <span>krishsah221@gmail.com</span>
-                        </div>
-                        <div class="d-flex">
-                            <div class="icon"><i class="bx bxs-phone"></i></div>
-                            <span>+977 9814302175</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </footer>
-    <div class="user-form">
-        <div class="close-form d-flex"><i class="bx bx-x"></i></div>
-        <div class="form-wrapper container">
-            <div class="user login">
-                <div class="img-box">
-                    <img src="./images/login.svg" alt="" />
-                </div>
-                <div class="form-box">
-                    <div class="top">
-                        <p>
-                            Not a member?
-                            <span data-id="#ff0066">Register now</span>
-                        </p>
-                    </div>
-                    <form action="">
-                        <div class="form-control">
-                            <h2>Hello Again!</h2>
-                            <p>Welcome back you've been missed.</p>
-                            <input type="text" placeholder="Enter Username" />
-                            <div>
-                                <input type="password" placeholder="Password" />
-                                <div class="icon form-icon">
-                                    <!-- <img src="./images/eye.svg" alt="" /> -->
-                                </div>
-                            </div>
-                            <span>Recovery Password</span>
-                            <input type="Submit" value="Login" />
-                        </div>
-                        <div class="form-control">
-                            <p>Or continue with</p>
-                            <div class="icons">
-                                <div class="icon">
-                                    <img src="./images/search.svg" alt="" />
-                                </div>
-                                <div class="icon">
-                                    <img src="./images/apple.svg" alt="" />
-                                </div>
-                                <div class="icon">
-                                    <img src="./images/facebook.svg" alt="" />
-                                </div>
-                                <div class="icon">
-                                    <img src="./images/github.svg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
 
-            <!-- Register -->
-            <div class="user signup">
-                <div class="form-box">
-                    <div class="top">
-                        <p>
-                            Already a member?
-                            <span data-id="#1a1aff">Login now</span>
-                        </p>
-                    </div>
-                    <form action="">
-                        <div class="form-control">
-                            <h2>Welcome Codevo!</h2>
-                            <p>It's good to have you.</p>
-                            <input type="email" placeholder="Enter Email" />
-                            <div>
-                                <input type="password" placeholder="Password" />
-                                <div class="icon form-icon">
-                                    <img src="./images/eye.svg" alt="" />
-                                </div>
-                            </div>
-                            <div>
-                                <input type="password" placeholder="Confirm Password" />
-                                <div class="icon form-icon">
-                                    <img src="./images/eye.svg" alt="" />
-                                </div>
-                            </div>
-                            <input type="Submit" value="Register" />
-                        </div>
-                        <div class="form-control">
-                            <p>Or continue with</p>
-                            <div class="icons">
-                                <div class="icon">
-                                    <img src="./images/search.svg" alt="" />
-                                </div>
-                                <div class="icon">
-                                    <img src="./images/apple.svg" alt="" />
-                                </div>
-                                <div class="icon">
-                                    <img src="./images/facebook.svg" alt="" />
-                                </div>
-                                <div class="icon">
-                                    <img src="./images/github.svg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="img-box">
-                    <img src="./images/trial.svg" alt="" />
-                </div>
-            </div>
+        <!-- Hamburger -->
+        <div class="hamburger">
+          <i class="bx bx-menu-alt-right"></i>
         </div>
+      </div>
+    </nav>
+
+    <!-- ====== Hero Area ====== -->
+    <div class="hero">
+      <div class="row container d-flex">
+        <div class="col">
+          <span class="subtitle">Limited Time Only For Summer</span>
+          <h1>ABOUT</span>US...</h1>
+          <p>LOOK YOUR BEST ON YOUR BEST DAY</p>
+
+          <button class="btn">Explore Now!</button>
+        </div>
+        <!-- <img src="./images/woman-in-cart.png" alt="" /> -->
+      </div>
     </div>
 
-    <!-- Add your custom scripts and JS links here if needed -->
-    <script src="./js/custom-script.js"></script>
+
+
+    <header class="header page-header">
+      
+
+    <section class="section portfolio">
+        <div class="title">
+            <span>OUR PORTFOLIO</span>
+            <h2>Check Out Our Work</h2>
+        </div>
+        <div class="row container">
+            <div class="col">
+                <img src="images/blog-1.png" alt="Portfolio Item 1" />
+                <h3>Best Design Team</h3>
+                <p>We have the best design team in country Nepal</p>
+            </div>
+            <div class="col">
+                <img src="images/blog-2.png" alt="Portfolio Item 2" />
+                <h3>Portfolio Item 2 Title</h3>
+                <p>Description of Portfolio Item 2.</p>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </div>
+    </section>
+
+    <!-- Your existing footer section ... -->
+
 </body>
 
 </html>

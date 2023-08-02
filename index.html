@@ -13,14 +13,24 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <!-- ====== Custom CSS ====== -->
   <link rel="stylesheet" href="css/styles.css" />
-  <title>KB Clothes</title>
   <style>
-    /* Your existing CSS styles */
-    /* ... */
+    body {
+      transform: translateX(-100%);
+    }
+
+    body.loaded {
+      transform: translateX(0);
+      transition: transform 0.5s ease;
+    }
   </style>
+  
+  <title>KB Clothes</title>
+
+
 </head>
 
 <body>
+  <body class="loaded"></body>
   <!-- ====== Header ====== -->
   <header class="header">
     <!-- ====== Navigation ====== -->
@@ -138,6 +148,7 @@
         </h3>
       </div>
     </div>
+    
   </section>
 
   <!-- ====== Categories ====== -->
@@ -443,6 +454,15 @@
   <!-- ====== Custom Script ====== -->
   <script src="./js/product.js"></script>
   <script src="./js/main.js"></script>
+  <script>
+    // Wait for the page to load
+    window.addEventListener("load", function () {
+      // Add the "loaded" class to the body after a short delay (0.1 seconds)
+      setTimeout(function () {
+        document.body.classList.add("loaded");
+      }, 100);
+    });
+  </script>
 </body>
 
 </html>
